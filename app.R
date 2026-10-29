@@ -68,7 +68,7 @@ ui <- fluidPage(
   div(
     class = "app-header",
     h1("Curva de crecimiento de von Bertalanffy"),
-    p("Diseña la figura, ajusta los parámetros y exporta archivos vectoriales para Adobe Illustrator.")
+    p("Diseña la figura, ajusta los parámetros y exporta una figura en formato vectorial.")
   ),
   
   sidebarLayout(
@@ -82,7 +82,7 @@ ui <- fluidPage(
           title = "Modelo",
           br(),
           div(class = "section-label", "Parámetros biológicos"),
-          numericInput("Linf", HTML("L∞ · longitud asintótica"), value = 85, min = 0.001, step = 1),
+          numericInput("Linf", HTML("L∞ · longitud asintótica"), value = 120, min = 0.001, step = 1),
           numericInput("K", "K · coeficiente de crecimiento", value = 0.35, min = 0.0001, step = 0.01),
           numericInput("t0", HTML("t₀ · edad teórica a longitud cero"), value = -0.2, step = 0.1),
           div(class = "field-note", "Los valores iniciales son ilustrativos. Sustitúyelos por las estimaciones correspondientes a tu especie."),
@@ -110,7 +110,7 @@ ui <- fluidPage(
             "curve_color", "Color de la curva", value = "#245D7A",
             showColour = "both", palette = "limited", allowTransparent = FALSE
           ),
-          sliderInput("line_width", "Grosor de línea", min = 0.2, max = 2.5, value = 0.9, step = 0.1),
+          sliderInput("line_width", "Grosor de línea", min = 0.2, max = 4, value = 1, step = 0.01),
           selectInput(
             "line_type", "Tipo de línea",
             choices = c("Continua" = "solid", "Discontinua" = "dashed", "Punteada" = "dotted",
