@@ -92,7 +92,7 @@ ui <- fluidPage(
             column(6, numericInput("age_min", "Edad mínima", value = 0, step = 0.5)),
             column(6, numericInput("age_max", "Edad máxima", value = 25, step = 0.5))
           ),
-          sliderInput("n_points", "Suavidad de la curva", min = 100, max = 1500, value = 500, step = 100),
+          sliderInput("n_points", "Suavidad de la curva", min = 5, max = 1000, value = 500, step = 5),
           div(class = "field-note", "Un mayor número de puntos genera una curva más suave; normalmente 300–700 puntos son suficientes.")
         ),
         
@@ -108,7 +108,7 @@ ui <- fluidPage(
           div(class = "section-label", "Apariencia"),
           colourpicker::colourInput(
             "curve_color", "Color de la curva", value = "#245D7A",
-            showColour = "both", palette = "limited", allowTransparent = FALSE
+            showColour = "both", palette = "square", allowTransparent = FALSE
           ),
           sliderInput("line_width", "Grosor de línea", min = 0.2, max = 4, value = 1, step = 0.01),
           selectInput(
