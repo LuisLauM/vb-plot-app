@@ -4,7 +4,7 @@ Aplicación interactiva para generar y personalizar curvas de crecimiento de von
 
 ## Uso
 
-1. Ajusta los parámetros del modelo: \(L_\infty\), \(K\) y \(t_0\).
+1. Ajusta los parámetros del modelo: $\(L_\infty\)$, $\(K\)$ y $\(t_0\)$.
 2. Personaliza la apariencia de la figura: colores, líneas, tipografía, ejes y etiquetas.
 3. Define las dimensiones de exportación y el nombre del archivo.
 4. Descarga la figura en **SVG** o **PDF**.
