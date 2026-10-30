@@ -1,6 +1,6 @@
 # Curva de crecimiento de von Bertalanffy
 
-Aplicación interactiva para generar y personalizar curvas de crecimiento de von Bertalanffy y exportarlas en formatos vectoriales, listas para editar en Adobe Illustrator.
+Aplicación interactiva para generar y personalizar curvas de crecimiento de von Bertalanffy y exportarlas en formatos vectoriales.
 
 ## Uso
 
@@ -18,9 +18,13 @@ Ambos formatos conservan los elementos gráficos como vectores, por lo que puede
 
 ## Parámetros del modelo
 
-- \(L_\infty\): longitud asintótica estimada.
-- \(K\): coeficiente de crecimiento.
-- \(t_0\): edad teórica a la que la longitud es cero.
+$$
+L_t=L_{\infty} \left(1-e^{K(t-t_0)} \right)
+$$
+
+- $\(L_\infty\)$: longitud asintótica estimada.
+- $\(K\)$: coeficiente de crecimiento.
+- $\(t_0\)$: edad teórica a la que la longitud es cero.
 
 Los valores iniciales son ilustrativos. Reemplázalos por los parámetros correspondientes a la especie o población que deseas representar.
 
