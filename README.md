@@ -11,7 +11,7 @@ Aplicación interactiva para generar y personalizar curvas de crecimiento de von
 
 ## Formatos de exportación
 
-- **SVG:** recomendado para editar los elementos de la figura individualmente en Adobe Illustrator.
+- **SVG:** recomendado para editar los elementos de la figura individualmente.
 - **PDF:** recomendado para incorporar la figura en manuscritos y documentos científicos.
 
 Ambos formatos conservan los elementos gráficos como vectores, por lo que pueden ampliarse sin perder nitidez.
